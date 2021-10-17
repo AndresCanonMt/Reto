@@ -20,8 +20,8 @@ import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 /**
- *
- * @author CARLOS ANDRES
+ * 
+ * @author Andre
  */
 
 @Entity

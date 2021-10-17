@@ -13,8 +13,8 @@ import org.springframework.stereotype.Repository;
 import co.usa.edu.spring.rentcar.crudrepository.GamaInterface;
 
 /**
- *
- * @author CARLOS ANDRES
+ * 
+ * @author Andre
  */
 @Repository
 public class GamaRepository {

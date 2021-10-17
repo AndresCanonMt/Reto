@@ -9,8 +9,8 @@ import co.usa.edu.spring.rentcar.model.Car;
 import org.springframework.data.repository.CrudRepository;
 
 /**
- *
- * @author CARLOS ANDRES
+ * 
+ * @author Andre
  */
 
 public interface CarInterface extends CrudRepository<Car,Integer> {

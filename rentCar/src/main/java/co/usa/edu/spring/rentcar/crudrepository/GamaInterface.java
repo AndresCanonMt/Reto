@@ -9,8 +9,8 @@ import co.usa.edu.spring.rentcar.model.Gama;
 import org.springframework.data.repository.CrudRepository;
 
 /**
- *
- * @author CARLOS ANDRES
+ * 
+ * @author Andre
  */
 public interface GamaInterface extends CrudRepository<Gama, Integer> {
     

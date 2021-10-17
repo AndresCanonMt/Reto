@@ -13,8 +13,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 /**
- *
- * @author CARLOS ANDRES
+ * 
+ * @author Andre
  */
 
 @Repository

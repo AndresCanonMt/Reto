@@ -14,10 +14,9 @@ import org.springframework.stereotype.Repository;
 import co.usa.edu.spring.rentcar.crudrepository.ClientInterface;
 
 /**
- *
- * @author CARLOS ANDRES
+ * 
+ * @author Andre
  */
-
 @Repository
 public class ClientRepository {
     @Autowired

@@ -18,8 +18,8 @@ import javax.persistence.Table;
 
 
 /**
- *
- * @author CARLOS ANDRES
+ * 
+ * @author Andre
  */
 
 @Entity
@@ -36,21 +36,22 @@ public class Message implements Serializable {
     private String messageText;
     
     @ManyToOne
-    @JoinColumn(name="idClient")
-    @JsonIgnoreProperties({"messages", "reservations"})
-    private Client client;
-    
-    @ManyToOne
     @JoinColumn(name="idCar")
     @JsonIgnoreProperties({"messages","reservations"})
     private Car car;
 
-    public Message(Integer idMessage, String messageText, Client client, Car car) {
+    @ManyToOne
+    @JoinColumn(name="idClient")
+    @JsonIgnoreProperties({"messages", "reservations"})
+    private Client client;
+
+    public Message(Integer idMessage, String messageText, Car car, Client client) {
         this.idMessage = idMessage;
         this.messageText = messageText;
-        this.client = client;
         this.car = car;
+        this.client = client;
     }
+    
 
     public Message() {
         super();
@@ -72,6 +73,14 @@ public class Message implements Serializable {
         this.messageText = messageText;
     }
 
+    public Car getCar() {
+        return car;
+    }
+
+    public void setCar(Car car) {
+        this.car = car;
+    }
+
     public Client getClient() {
         return client;
     }
@@ -80,13 +89,7 @@ public class Message implements Serializable {
         this.client = client;
     }
 
-    public Car getCar() {
-        return car;
-    }
-
-    public void setCar(Car car) {
-        this.car = car;
-    }
+    
 
     @Override
     public String toString() {

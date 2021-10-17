@@ -18,8 +18,8 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 /**
- *
- * @author CARLOS ANDRES
+ * 
+ * @author Andre
  */
 
 @Entity

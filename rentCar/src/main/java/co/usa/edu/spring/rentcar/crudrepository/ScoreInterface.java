@@ -9,8 +9,8 @@ import co.usa.edu.spring.rentcar.model.Score;
 import org.springframework.data.repository.CrudRepository;
 
 /**
- *
- * @author CARLOS ANDRES
+ * 
+ * @author Andre
  */
 
 public interface ScoreInterface extends CrudRepository<Score, Integer>{
